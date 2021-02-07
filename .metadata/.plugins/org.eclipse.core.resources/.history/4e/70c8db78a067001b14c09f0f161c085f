@@ -1,0 +1,45 @@
+package ExceptionHandling;
+
+import java.util.*;
+
+class CusException extends Exception{
+	public CusException()
+	{
+		
+	}
+}
+public class ExcepProject {
+
+	void withdraw()
+	{
+		
+	}
+	
+	void deposite()
+	{
+		
+	}
+	
+	void checkbal()
+	{
+		
+	}
+	
+	public static void main(String args[])
+	{
+		
+		String userid = "12345678";
+		String pswd = "12345";
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter userid : ");
+		String userid1 = sc.nextLine();
+		System.out.println("Enter password : ");
+		String pswd1 = sc.nextLine();
+		if(userid == userid1) {
+			System.out.println("Both are equal");
+		}
+	}
+	
+	
+	
+}

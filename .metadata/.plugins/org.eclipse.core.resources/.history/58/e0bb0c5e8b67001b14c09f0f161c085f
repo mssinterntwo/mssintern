@@ -1,0 +1,36 @@
+package Example;
+
+public class ExcepUsingThrow extends Exception  {
+
+	public ExcepUsingThrow()
+	{
+		System.out.println("Age must be greater than 18");
+		
+	}
+
+}
+public class Example
+{
+	void check(int x) throws ExcepUsingThrow
+	{
+		try {
+			if(x<18)
+				throw new ExcepUsingThrow();
+			else
+			System.out.println("User Valid..");
+		}
+		catch(ExcepUsingThrow e)
+		{
+			System.out.println(e);
+		}
+	}
+	public static void main(String args[]) {
+		Example e = new Example();
+		e.check(17);
+	}
+}
+//class myexception extends ExcepUsingThrow{
+//	public void myexceptionfun() {
+	//	System.out.println("age must 18+");
+	//}
+//}

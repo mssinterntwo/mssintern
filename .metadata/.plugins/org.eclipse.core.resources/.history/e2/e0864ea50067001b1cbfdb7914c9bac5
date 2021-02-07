@@ -1,0 +1,33 @@
+package strings;
+
+import java.util.Scanner;
+
+public class Palandrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int c=0;
+		System.out.println("enter a string");
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		int n = s.length();
+		for(int j=0;j<=n;j++) {
+			for(int i=n;i>=0;i--)
+			{
+				if(s.charAt(i)==s.charAt(j));
+				{
+					c++;
+				}
+			}
+		}
+		if(c==n) {
+			System.out.println("palandrome");
+		}
+		else {
+			System.out.println("not apalandrome");
+		}
+	}
+	}
+
+
+//char chrArray[]=s1.toCharArray();

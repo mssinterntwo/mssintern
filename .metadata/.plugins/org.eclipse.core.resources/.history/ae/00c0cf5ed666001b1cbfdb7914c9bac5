@@ -1,0 +1,25 @@
+package strings;
+
+import java.util.Scanner;
+
+public class DelSpecialChar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("enter a string");
+		Scanner sc = new Scanner(System.in);
+		String s1 = sc.nextLine();
+		char[] chrArray=s1.toCharArray();
+		int n=chrArray.length;
+		for(int i=0;i<=n; i++) {
+			int asc=chrArray[i];
+			if(asc==33||asc==34||asc==35||asc==36||asc==37||asc==38||asc==39||asc==40||asc==41||asc==42||asc==43||asc==44||asc==45||asc==46||asc==47) {
+				chrArray[i] =' ';
+			}
+		}
+		for(int j=0;j<= n; j++) {
+		System.out.println(chrArray[i]);
+		}
+	}
+
+}

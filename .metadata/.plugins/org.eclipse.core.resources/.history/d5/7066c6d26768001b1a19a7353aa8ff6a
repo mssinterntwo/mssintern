@@ -1,0 +1,9 @@
+package filesexamples;
+import java.util.*;
+public class WriteToProperties {
+	public static void main(String[] args) {
+	
+		Properties p =new properties();
+	
+}
+}

@@ -1,0 +1,8 @@
+package number;
+
+public class dev3and5 {
+	public static void main(String args[]) {
+		Scanner.out.println("navu beh")
+	}
+
+}

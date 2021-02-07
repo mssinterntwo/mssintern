@@ -1,0 +1,13 @@
+package filesexamples;
+import java.io.FileOutputStream;
+import java.util.*;
+public class WriteToProperties {
+	public static void main(String[] args) {
+	
+		Properties p =new Properties();
+		ysout
+		FileOutputStream fo= new FileOutputStream("mainfile.properties");
+		p.setProperty("uname", "abc");
+		p.setProperty("pwd", "xyz");
+}
+}

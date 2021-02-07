@@ -1,0 +1,36 @@
+package ExceptionHandling;
+
+public class MyException extends Exception  {
+
+	public MyException()
+	{
+		System.out.println("Age must be greater than 18");
+		
+	}
+
+}
+public class Example
+{
+	void check(int x) throws MyException
+	{
+		try {
+			if(x<18)
+				throw new MyException();
+			else
+			System.out.println("User Valid..");
+		}
+		catch(MyException e)
+		{
+			System.out.println(e);
+		}
+	}
+	public static void main(String args[]) {
+		Example e = new Example();
+		e.check(x);
+	}
+}
+//class myexception extends ExcepUsingThrow{
+//	public void myexceptionfun() {
+	//	System.out.println("age must 18+");
+	//}
+//}

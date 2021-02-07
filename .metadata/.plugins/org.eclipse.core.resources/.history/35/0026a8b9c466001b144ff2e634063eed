@@ -1,0 +1,25 @@
+package strings;
+
+import java.util.Scanner;
+
+public class FirstCharToUp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("enter a string");
+		Scanner sc = new Scanner(System.in);
+		String s1 = sc.nextLine();
+		
+		for(int i=0;i<=(s1.length()-1);i--){
+			String first=s1.substring(i,1+1);
+			if(i==0) {
+				s1=first.toUpperCase();
+			}
+			
+		}
+				
+			
+		}}
+	
+
+

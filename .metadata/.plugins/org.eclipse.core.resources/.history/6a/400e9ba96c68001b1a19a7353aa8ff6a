@@ -1,0 +1,10 @@
+package filesexamples;
+
+public class DiffrentReadFiles {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

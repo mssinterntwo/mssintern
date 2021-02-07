@@ -1,0 +1,17 @@
+package strings;
+import java.util.*;
+public class exStrings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String st = "hello";
+		String st2 = "hello";
+		String st3 =new String("HELLO");
+		String st1=new String("hello");
+		
+		System.out.println(st==st1);
+		System.out.println(st.equals(st1));
+		System.out.println(st.equals(st2));
+	}
+
+}

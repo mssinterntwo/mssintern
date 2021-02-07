@@ -1,0 +1,14 @@
+package number;
+import java.util.Scanner;
+public class menuDriCal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("select a opt");
+		System.out.println("1.add 2.sub 3.mult 4.div");
+		Scanner sc= new Scanner(System.in);
+		int opt=sc.nextInt();
+		
+	}
+
+}
