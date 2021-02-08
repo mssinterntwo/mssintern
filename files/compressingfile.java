@@ -6,7 +6,7 @@ public class compressingfile {
 		byte b[]= {48,49,50,51,52};
 		try {
 			
-			FileInputStream fin=new FileInputStream("demo.txt");
+			FileInputStream fin=new FileInputStream("dmo.txt");
 			FileOutputStream fout=new FileOutputStream("demo23.txt");
 			DeflaterOutputStream dout=new DeflaterOutputStream(fout);
 			int val=0;
