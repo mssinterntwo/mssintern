@@ -12,6 +12,7 @@ public class AlphaString {
 		char chrArray[]=s1.toCharArray();
 		Arrays.sort(chrArray);
 		System.out.println(chrArray);
+		System.out.println("hello");
 		
 	}
 
