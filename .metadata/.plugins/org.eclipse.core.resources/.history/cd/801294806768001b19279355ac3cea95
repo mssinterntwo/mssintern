@@ -1,0 +1,5 @@
+package collectionframework;
+import java.util.Scanner;
+public class arraylistexample {
+
+}

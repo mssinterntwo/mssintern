@@ -1,0 +1,19 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class driverexample {
+	public static void main(String[] args) throws ClassNotFoundException
+	{
+		Class.forName("com.mysql.jdbc.Driver");
+		try
+		{
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/new_table","root","root");
+		System.out.println("Connection established");
+		}
+		catch(SQLException e)
+		{
+			e.printStackTrace();
+		}
+	}
+}

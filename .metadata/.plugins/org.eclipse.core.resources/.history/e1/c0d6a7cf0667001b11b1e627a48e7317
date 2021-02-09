@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class zero_exception {
+  public static void main(String[] args)
+  {
+	  Scanner sc=new Scanner(System.in);
+	  System.out.println("Enter 2 numbers to perform division: ");
+	  int a=sc.nextInt();
+	  int b=sc.nextInt();
+	  
+	  try {
+		  int c=a/b;
+	  }
+	  catch(Exception e){
+		  
+		  System.out.println("is the answer");
+	  }
+	  finally {
+		  System.out.println("finally should be executed anywhere");
+	  }
+  }
+}

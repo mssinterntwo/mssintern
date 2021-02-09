@@ -1,0 +1,125 @@
+import java.util.Scanner;
+class userexception extends Exception
+{
+	int count =0;
+	userexception()
+	{
+		System.out.println("Invalid user!!");
+		count=count+1;
+	}
+	
+}
+class withdrawexception extends Exception
+{
+	
+	withdrawexception()
+	{
+		System.out.println("Insufficient balance!!");
+	}
+}
+class depositexception extends Exception
+{
+	depositexception()
+	{
+		System.out.println("deposit limit is only 500");
+	}
+}
+class balanceexception extends Exception
+{
+	balanceexception()
+	{
+		System.out.println("please enter correct account number!!!!!");
+	}
+}
+public class bankaccount {
+    public static void main(String[] args)
+    {
+    	Scanner sc=new Scanner(System.in);
+    	int balance=5000;
+    	int account=123456789;
+    	String usrid="vennela";
+    	String pswd="vennela@12345";
+    	System.out.println("Enter your userid:");
+    	String user=sc.nextLine();
+    	System.out.println("Enter your password:");
+    	String password=sc.nextLine();
+        try
+        {
+           if(usrid.equals(user)&&pswd.equals(password))
+           {
+        	  System.out.println("please select the menu");
+        	  System.out.println("1.withdraw   2.deposit    3.balanceenquiry   4.Exit");
+        	  int n=sc.nextInt();
+        	  for(;n!=4;)
+        	  {
+        		  switch(n)
+        		  {
+        		  case 1:try {
+        			  System.out.println("Enter your withdraw amount:");
+        			  int withdrawamount=sc.nextInt();
+        			  if(balance<withdrawamount)
+        			  {
+        				  throw new withdrawexception();
+        			  }
+        		  }
+        		  catch(withdrawexception exp)
+        		  {
+        			 break;
+        		  }
+        		  case 2:try {
+        			  System.out.println("Enter amount which you want to deposit:");
+        			  int deposit=sc.nextInt();
+        			  if(deposit>500)
+        			  {
+        				  throw new depositexception();
+        			  }
+        			  else {
+        				  System.out.println("amount deposit successfully!!!");
+        			  }
+        		  }
+        		  catch(depositexception exp)
+        		  {
+        			  break;
+        			  
+        		  }
+        		  case 3:  try {
+        			  System.out.println("Enter account number to check balance:");
+        			  int accountno=sc.nextInt();
+        			  if(account==accountno)
+        			  {
+        				System.out.println("your balance:"+balance);  
+        			  }
+        			  else
+        			  {
+        				  throw new balanceexception();
+        			  }
+        		  }
+        		  catch(balanceexception exp)
+        		  {
+        			  break;
+        		  }
+        		  default:
+        			  System.out.println("please enter valid number!!");
+        
+        		  
+        		  }
+        	  }
+           }
+        
+    
+
+        else
+        {
+        	   throw new userexception();
+        }
+        }
+        
+        
+        catch(userexception exp)
+        {
+        	System.out.println(exp);        
+        }
+       
+}
+}
+        

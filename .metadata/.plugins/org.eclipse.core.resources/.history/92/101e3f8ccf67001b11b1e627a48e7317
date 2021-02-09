@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class userexception extends Exception
+{
+	int count =0;
+	userexception()
+	{
+		System.out.println("Invalid user!!");
+		count=count+1;
+	}
+	
+}
+public class bankaccount {
+    public static void main(String[] args)
+    {
+    	Scanner sc=new Scanner(System.in);
+    	
+    	String usrid="vennela";
+    	String pswd="vennela@12345";
+    	System.out.println("Enter your userid:");
+    	String user=sc.nextLine();
+    	System.out.println("Enter your password:");
+    	String password=sc.nextLine();
+        try
+        {
+           if(usrid.equals(user)&&pswd.equals(password))
+           {
+        	  System.out.println("please select the menu");
+        	  System.out.println("1.withdraw   2.deposit    3.balanceenquiry   4.Exit");
+        	  int n=sc.nextInt();
+        
+        		  
+           }
+           else
+           {
+        	   throw new userexception();
+           }
+   
+        }
+        catch(userexception exp)
+        
+        {
+        	System.out.println(exp);        }
+    }
+}

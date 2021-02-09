@@ -1,0 +1,12 @@
+
+public class program21 {
+	public static void main(String[] args)
+	{ 
+		Scanner sc=new Scanne(System.in);
+		System.out.println("enter n value:");
+		
+		for(int i=1;i<=)
+		
+	}
+
+}

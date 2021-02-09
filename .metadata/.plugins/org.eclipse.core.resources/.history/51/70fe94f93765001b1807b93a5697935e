@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class average {
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter how many numbers to find avreage:");
+		int n=sc.nextInt();
+		int i,avg=0;
+		System.out.println("enter numbers:");
+		int a[]=new int[n];
+		for( i=0;i<=n;i++) 
+		{
+			a[i]=sc.nextInt();
+		}
+		for(i=0;i<=n;i++)
+		{
+			avg=(avg+a[i])/n;
+		}
+		System.out.println("average is"+avg);
+	}
+}
